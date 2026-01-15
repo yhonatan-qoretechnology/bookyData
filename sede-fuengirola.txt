@@ -1,0 +1,1560 @@
+Estructura de sedes
+
+Formato creacion de la sede
+{
+  nombre: 'Glow Fuengirola',
+  direccion: 'Paseo Jesús Santos Rein, 2, 29640, Fuengirola, Málaga, España',
+  telefono: '+34664276448', 
+  latitud: 36.541668,
+  longitud: -4.623709, 
+  provincia: 'Málaga',
+  horario: {
+    lunes: '10:00-19:00',
+    martes: '10:00-19:00',
+    miércoles: '10:00-19:00',
+    jueves: '10:00-19:00',
+    viernes: '10:00-19:00',
+    sábado: '10:00-14:00',
+    domingo: 'Cerrado',
+  },
+  diasCerrado: [
+    { domingo: 'Cerrado' }, 
+  ],
+  empresaId: 3,
+  imagenes: [],
+}
+
+
+
+Formato Categoria si hay que crear deje la lista de las que ya estan
+
+
+las que existe [Manicura,Pedicura,Refuerzos,Extensiones Acrílicas,Extensiones Polygel, Extras para tus Uñas,Cejas,Depilación con Cera,Depilación con Hilo,Peluquería,Depilación con cera hombres] -> ya estan
+
+las que faltan [Pestañas, Rituales, Depilación con cera ]
+
+
+
+ [
+  {
+    image: 'https://cdn.miapp.com/categories/manicura.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Manicura',
+        description: 'Servicios de manicura y cuidado de manos',
+      },
+      {
+        language: 'en',
+        name: 'Manicure',
+        description: 'Manicure and hand care services',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/refuerzos.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Refuerzos',
+        description: 'Tratamientos de fortalecimiento para uñas naturales',
+      },
+      {
+        language: 'en',
+        name: 'Reinforcements',
+        description: 'Strengthening treatments for natural nails',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/pedicura.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Pedicura',
+        description: 'Cuidado completo y embellecimiento de pies',
+      },
+      {
+        language: 'en',
+        name: 'Pedicure',
+        description: 'Complete foot care and beautification',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/extensiones-acrilicas.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Extensiones Uñas Acrílicas',
+        description: 'Uñas esculpidas resistentes y duraderas',
+      },
+      {
+        language: 'en',
+        name: 'Acrylic Nail Extensions',
+        description: 'Resistant and durable sculpted nails',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/extensiones-polygel.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Extensiones Polygel',
+        description: 'Técnica híbrida ligera y flexible',
+      },
+      {
+        language: 'en',
+        name: 'Polygel Extensions',
+        description: 'Lightweight and flexible hybrid technique',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/extras-unas.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Extras para tus uñas',
+        description: 'Decoraciones, nail art y reparaciones',
+      },
+      {
+        language: 'en',
+        name: 'Nail Extras',
+        description: 'Decorations, nail art, and repairs',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/cejas.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Cejas',
+        description: 'Diseño, perfilado y laminado de cejas',
+      },
+      {
+        language: 'en',
+        name: 'Eyebrows',
+        description: 'Eyebrow design, shaping, and lamination',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/pestanas.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Pestañas',
+        description: 'Extensiones, lifting y tinte de pestañas',
+      },
+      {
+        language: 'en',
+        name: 'Eyelashes',
+        description: 'Eyelash extensions, lifting, and tinting',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/rituales.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Rituales',
+        description: 'Experiencias de relajación y bienestar',
+      },
+      {
+        language: 'en',
+        name: 'Rituals',
+        description: 'Relaxation and wellness experiences',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/depilacion-hilo.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Depilación con Hilo',
+        description: 'Técnica precisa para rostro y cejas',
+      },
+      {
+        language: 'en',
+        name: 'Threading',
+        description: 'Precise technique for face and brows',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/depilacion-cera.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Depilación con Cera',
+        description: 'Depilación corporal tradicional suave',
+      },
+      {
+        language: 'en',
+        name: 'Waxing',
+        description: 'Traditional gentle body hair removal',
+      },
+    ],
+  },
+  {
+    image: 'https://cdn.miapp.com/categories/depilacion-hombre.png',
+    translations: [
+      {
+        language: 'es',
+        name: 'Depilación con Cera para Hombre',
+        description: 'Servicios de depilación especializados para hombres',
+      },
+      {
+        language: 'en',
+        name: 'Men\'s Waxing',
+        description: 'Specialized waxing services for men',
+      },
+    ],
+  },
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Formato de los servicios
+
+  [
+  {
+    "categoryId": 1,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Manicura Semipermanente SPA",
+        "description": "Manicura completa con tratamiento SPA y esmaltado de larga duración."
+      },
+      {
+        "language": "en",
+        "name": "SPA Semi-Permanent Manicure",
+        "description": "Complete manicure with SPA treatment and long-lasting polish."
+      }
+    ],
+    "prices": [{ "amount": 21, "duration": 60, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 1,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Manicura Rusa Semipermanente",
+        "description": "Limpieza profunda de cutícula (técnica rusa) y esmaltado semipermanente."
+      },
+      {
+        "language": "en",
+        "name": "Russian Semi-Permanent Manicure",
+        "description": "Deep cuticle cleaning (Russian technique) and semi-permanent polish."
+      }
+    ],
+    "prices": [{ "amount": 27, "duration": 90, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 1,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Manicura Esmaltado tradicional SPA",
+        "description": "Cuidado de manos SPA con esmalte clásico tradicional."
+      },
+      {
+        "language": "en",
+        "name": "SPA Traditional Polish Manicure",
+        "description": "SPA hand care with classic traditional polish."
+      }
+    ],
+    "prices": [{ "amount": 13, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 1,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Manicura Esmaltado Tradicional Hombre",
+        "description": "Limpieza, corte y cuidado de manos diseñado para hombres."
+      },
+      {
+        "language": "en",
+        "name": "Men's Traditional Manicure",
+        "description": "Hand cleaning, cutting, and care designed for men."
+      }
+    ],
+    "prices": [{ "amount": 15, "duration": 45, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 2,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Refuerzo Fibra",
+        "description": "Refuerzo de uñas naturales con fibra de vidrio para mayor resistencia."
+      },
+      {
+        "language": "en",
+        "name": "Fiber Reinforcement",
+        "description": "Natural nail reinforcement with fiberglass for extra strength."
+      }
+    ],
+    "prices": [{ "amount": 27, "duration": 75, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 2,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Refuerzo AIB",
+        "description": "Técnica avanzada de refuerzo estructural para la uña."
+      },
+      {
+        "language": "en",
+        "name": "AIB Reinforcement",
+        "description": "Advanced structural reinforcement technique for the nail."
+      }
+    ],
+    "prices": [{ "amount": 33, "duration": 90, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 2,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Refuerzo Gel Constructor",
+        "description": "Capa de gel constructor sobre uña natural para evitar roturas."
+      },
+      {
+        "language": "en",
+        "name": "Builder Gel Reinforcement",
+        "description": "Layer of builder gel on natural nail to prevent breakage."
+      }
+    ],
+    "prices": [{ "amount": 27, "duration": 90, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 2,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Refuerzo Biab",
+        "description": "Builder In A Bottle: tratamiento fortalecedor todo en uno."
+      },
+      {
+        "language": "en",
+        "name": "Biab Reinforcement",
+        "description": "Builder In A Bottle: all-in-one strengthening treatment."
+      }
+    ],
+    "prices": [{ "amount": 33, "duration": 90, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 3,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pedicura Semipermanente SPA",
+        "description": "Tratamiento completo de pies con esmaltado semipermanente."
+      },
+      {
+        "language": "en",
+        "name": "SPA Semi-Permanent Pedicure",
+        "description": "Complete foot treatment with semi-permanent polish."
+      }
+    ],
+    "prices": [{ "amount": 36, "duration": 75, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 3,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pedicura Esmaltado tradicional SPA",
+        "description": "Tratamiento completo de pies con esmaltado clásico."
+      },
+      {
+        "language": "en",
+        "name": "SPA Traditional Polish Pedicure",
+        "description": "Complete foot treatment with classic polish."
+      }
+    ],
+    "prices": [{ "amount": 26, "duration": 60, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 3,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pedicura Semipermanente Jelly",
+        "description": "Experiencia de pedicura relajante con textura gelatinosa y esmaltado."
+      },
+      {
+        "language": "en",
+        "name": "Jelly Semi-Permanent Pedicure",
+        "description": "Relaxing pedicure experience with jelly texture and polish."
+      }
+    ],
+    "prices": [{ "amount": 41, "duration": 120, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 3,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Uñas Acrílico o Polygel Pies",
+        "description": "Reconstrucción o extensión de uñas de los pies."
+      },
+      {
+        "language": "en",
+        "name": "Acrylic or Polygel Toe Nails",
+        "description": "Reconstruction or extension of toe nails."
+      }
+    ],
+    "prices": [{ "amount": 12, "duration": 20, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 3,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pedicura Esmaltado Tradicional Hombre",
+        "description": "Cuidado integral de pies y uñas para hombres."
+      },
+      {
+        "language": "en",
+        "name": "Men's Traditional Pedicure",
+        "description": "Comprehensive foot and nail care for men."
+      }
+    ],
+    "prices": [{ "amount": 30, "duration": 75, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 4,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Uñas Nuevas Acrílicas Tamaño Max N-2",
+        "description": "Set de uñas nuevas acrílicas hasta tamaño número 2."
+      },
+      {
+        "language": "en",
+        "name": "New Acrylic Nails Size Max N-2",
+        "description": "Full set of new acrylic nails up to size number 2."
+      }
+    ],
+    "prices": [{ "amount": 43, "duration": 120, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 4,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Uñas Nuevas Acrílicas Extra Largas",
+        "description": "Set de uñas acrílicas longitud extra larga."
+      },
+      {
+        "language": "en",
+        "name": "Extra Long New Acrylic Nails",
+        "description": "Full set of extra long acrylic nails."
+      }
+    ],
+    "prices": [{ "amount": 50, "duration": 150, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 4,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Relleno de uñas Acrílicas",
+        "description": "Mantenimiento y relleno para crecimiento de uñas acrílicas."
+      },
+      {
+        "language": "en",
+        "name": "Acrylic Refill",
+        "description": "Maintenance and refill for acrylic nail growth."
+      }
+    ],
+    "prices": [{ "amount": 30, "duration": 90, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 4,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Relleno de Uñas ExtraLargas Acrílicas",
+        "description": "Mantenimiento para uñas acrílicas extra largas."
+      },
+      {
+        "language": "en",
+        "name": "Extra Long Acrylic Refill",
+        "description": "Maintenance for extra long acrylic nails."
+      }
+    ],
+    "prices": [{ "amount": 40, "duration": 120, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 4,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Recubrimiento en Acrílico Uña Natural",
+        "description": "Capa de acrílico sobre el largo natural de la uña (Kapping)."
+      },
+      {
+        "language": "en",
+        "name": "Acrylic Overlay on Natural Nail",
+        "description": "Acrylic layer over natural nail length (Kapping)."
+      }
+    ],
+    "prices": [{ "amount": 35, "duration": 100, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 5,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Uñas Nuevas Polygel Tamaño Max N2",
+        "description": "Set de uñas nuevas en Polygel hasta tamaño 2."
+      },
+      {
+        "language": "en",
+        "name": "New Polygel Nails Size Max N2",
+        "description": "Full set of new Polygel nails up to size 2."
+      }
+    ],
+    "prices": [{ "amount": 41, "duration": 120, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 5,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Uñas Nuevas Polygel ExtraLargas",
+        "description": "Set de uñas en Polygel longitud extra larga."
+      },
+      {
+        "language": "en",
+        "name": "Extra Long New Polygel Nails",
+        "description": "Full set of extra long Polygel nails."
+      }
+    ],
+    "prices": [{ "amount": 50, "duration": 150, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 5,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Relleno De uñas Polygel",
+        "description": "Mantenimiento estándar para uñas de Polygel."
+      },
+      {
+        "language": "en",
+        "name": "Polygel Refill",
+        "description": "Standard maintenance for Polygel nails."
+      }
+    ],
+    "prices": [{ "amount": 29, "duration": 90, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 5,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Relleno Extra Largas Polygel",
+        "description": "Mantenimiento para uñas Polygel extra largas."
+      },
+      {
+        "language": "en",
+        "name": "Extra Long Polygel Refill",
+        "description": "Maintenance for extra long Polygel nails."
+      }
+    ],
+    "prices": [{ "amount": 37, "duration": 150, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 5,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Recubrimiento en Polygel uña Natural",
+        "description": "Capa de Polygel sobre el largo natural de la uña."
+      },
+      {
+        "language": "en",
+        "name": "Polygel Overlay on Natural Nail",
+        "description": "Polygel layer over natural nail length."
+      }
+    ],
+    "prices": [{ "amount": 35, "duration": 100, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Implementos de asepsia",
+        "description": "Kit de seguridad por hongo o infección."
+      },
+      {
+        "language": "en",
+        "name": "Asepsis Implements",
+        "description": "Safety kit for fungus or infection."
+      }
+    ],
+    "prices": [{ "amount": 3, "duration": 5, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Decoración Por Uña",
+        "description": "Arte o diseño en una sola uña."
+      },
+      {
+        "language": "en",
+        "name": "Nail Art Per Nail",
+        "description": "Art or design on a single nail."
+      }
+    ],
+    "prices": [{ "amount": 1, "duration": 10, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Decoración Completa",
+        "description": "Decoración a mano alzada o pedrería (5 o más uñas)."
+      },
+      {
+        "language": "en",
+        "name": "Full Set Decoration",
+        "description": "Freehand art or rhinestones (5 or more nails)."
+      }
+    ],
+    "prices": [{ "amount": 9, "duration": 40, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Kit de Manicura",
+        "description": "Kit personal de limas y utensilios."
+      },
+      {
+        "language": "en",
+        "name": "Manicure Kit",
+        "description": "Personal kit of files and tools."
+      }
+    ],
+    "prices": [{ "amount": 5, "duration": 5, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Cambio de Forma",
+        "description": "Limado para cambiar la forma de la uña."
+      },
+      {
+        "language": "en",
+        "name": "Shape Change",
+        "description": "Filing to change the nail shape."
+      }
+    ],
+    "prices": [{ "amount": 5, "duration": 20, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Retiro Semipermanente",
+        "description": "Retirado del esmalte semipermanente."
+      },
+      {
+        "language": "en",
+        "name": "Semi-Permanent Removal",
+        "description": "Removal of semi-permanent polish."
+      }
+    ],
+    "prices": [{ "amount": 5, "duration": 10, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Retiro Refuerzo",
+        "description": "Retirado de capping o refuerzo."
+      },
+      {
+        "language": "en",
+        "name": "Reinforcement Removal",
+        "description": "Removal of capping or reinforcement."
+      }
+    ],
+    "prices": [{ "amount": 7, "duration": 20, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Retiro Extensión",
+        "description": "Retirado completo de uñas esculpidas."
+      },
+      {
+        "language": "en",
+        "name": "Extension Removal",
+        "description": "Complete removal of sculpted nails."
+      }
+    ],
+    "prices": [{ "amount": 11, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Uña rota clienta Glow",
+        "description": "Reparación de uña rota para clientes frecuentes."
+      },
+      {
+        "language": "en",
+        "name": "Broken Nail (Glow Client)",
+        "description": "Broken nail repair for frequent clients."
+      }
+    ],
+    "prices": [{ "amount": 2.50, "duration": 15, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Uña Rota de Otro Centro",
+        "description": "Reparación de uña rota realizada en otro salón."
+      },
+      {
+        "language": "en",
+        "name": "Broken Nail (Other Salon)",
+        "description": "Repair of a broken nail done at another salon."
+      }
+    ],
+    "prices": [{ "amount": 4, "duration": 20, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Extra",
+        "description": "Servicio adicional general."
+      },
+      {
+        "language": "en",
+        "name": "Extra Service",
+        "description": "General additional service."
+      }
+    ],
+    "prices": [{ "amount": 12, "duration": 15, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Baby Boomer",
+        "description": "Efecto degradado Baby Boomer."
+      },
+      {
+        "language": "en",
+        "name": "Baby Boomer",
+        "description": "Baby Boomer gradient effect."
+      }
+    ],
+    "prices": [{ "amount": 4, "duration": 15, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 6,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Adicional de Manicura Rusa con refuerzo",
+        "description": "Suplemento para añadir técnica rusa a un refuerzo."
+      },
+      {
+        "language": "en",
+        "name": "Russian Manicure Add-on",
+        "description": "Supplement to add Russian technique to a reinforcement."
+      }
+    ],
+    "prices": [{ "amount": 7, "duration": 10, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con hilo (Cejas)",
+        "description": "Limpieza de cejas con técnica de hilo."
+      },
+      {
+        "language": "en",
+        "name": "Eyebrow Threading",
+        "description": "Eyebrow cleanup using threading technique."
+      }
+    ],
+    "prices": [{ "amount": 11, "duration": 20, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con Cera (Cejas)",
+        "description": "Limpieza de cejas con cera suave."
+      },
+      {
+        "language": "en",
+        "name": "Eyebrow Waxing",
+        "description": "Eyebrow cleanup using soft wax."
+      }
+    ],
+    "prices": [{ "amount": 7, "duration": 15, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Diseño Henna con Hilo",
+        "description": "Diseño de cejas, depilación con hilo y tinte henna."
+      },
+      {
+        "language": "en",
+        "name": "Henna Design & Threading",
+        "description": "Brow design, threading, and henna tint."
+      }
+    ],
+    "prices": [{ "amount": 24, "duration": 35, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Diseño Henna con Cera",
+        "description": "Diseño de cejas, depilación con cera y tinte henna."
+      },
+      {
+        "language": "en",
+        "name": "Henna Design & Waxing",
+        "description": "Brow design, waxing, and henna tint."
+      }
+    ],
+    "prices": [{ "amount": 19, "duration": 35, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación y Mapping de cejas",
+        "description": "Estudio geométrico de la ceja (visagismo) y depilación."
+      },
+      {
+        "language": "en",
+        "name": "Brow Mapping & Waxing",
+        "description": "Geometric brow study (visagism) and waxing."
+      }
+    ],
+    "prices": [{ "amount": 14, "duration": 20, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Henna Cejas",
+        "description": "Solo aplicación de tinte henna natural."
+      },
+      {
+        "language": "en",
+        "name": "Brow Henna",
+        "description": "Application of natural henna tint only."
+      }
+    ],
+    "prices": [{ "amount": 14, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Tinte Cejas",
+        "description": "Tinte clásico para dar color a las cejas."
+      },
+      {
+        "language": "en",
+        "name": "Brow Tint",
+        "description": "Classic tint to color the brows."
+      }
+    ],
+    "prices": [{ "amount": 8, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación hilo o cera + Diseño con tinte",
+        "description": "Pack completo de depilación y diseño con tinte clásico."
+      },
+      {
+        "language": "en",
+        "name": "Wax/Thread & Tint Design",
+        "description": "Full pack of hair removal and design with classic tint."
+      }
+    ],
+    "prices": [{ "amount": 24, "duration": 35, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 7,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Laminado y Tinte Cejas",
+        "description": "Tratamiento para alisar, fijar y teñir las cejas (incluye diseño)."
+      },
+      {
+        "language": "en",
+        "name": "Brow Lamination & Tint",
+        "description": "Treatment to straighten, set, and tint brows (includes design)."
+      }
+    ],
+    "prices": [{ "amount": 30, "duration": 60, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pestañas híbridas",
+        "description": "Aplicación de pestañas técnica híbrida, combinación de clásica y volumen."
+      },
+      {
+        "language": "en",
+        "name": "Hybrid Lashes",
+        "description": "Hybrid technique lash application, mix of classic and volume."
+      }
+    ],
+    "prices": [{ "amount": 46, "duration": 135, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Relleno pestañas híbridas",
+        "description": "Mantenimiento y relleno para pestañas de técnica híbrida."
+      },
+      {
+        "language": "en",
+        "name": "Hybrid Lashes Refill",
+        "description": "Maintenance and refill for hybrid technique lashes."
+      }
+    ],
+    "prices": [{ "amount": 41, "duration": 120, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pestañas 2D y 3D",
+        "description": "Extensiones de pestañas con técnica de volumen suave 2D y 3D."
+      },
+      {
+        "language": "en",
+        "name": "2D & 3D Lashes",
+        "description": "Lash extensions with soft 2D and 3D volume technique."
+      }
+    ],
+    "prices": [{ "amount": 51, "duration": 135, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Relleno pestañas 2D y 3D",
+        "description": "Retoque y mantenimiento para extensiones 2D y 3D."
+      },
+      {
+        "language": "en",
+        "name": "2D & 3D Lashes Refill",
+        "description": "Touch-up and maintenance for 2D and 3D extensions."
+      }
+    ],
+    "prices": [{ "amount": 41, "duration": 120, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pestañas volumen Ruso",
+        "description": "Técnica avanzada de volumen completo para una mirada intensa."
+      },
+      {
+        "language": "en",
+        "name": "Russian Volume Lashes",
+        "description": "Advanced full volume technique for an intense look."
+      }
+    ],
+    "prices": [{ "amount": 60, "duration": 135, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Relleno pestañas volumen Ruso",
+        "description": "Mantenimiento para extensiones de volumen ruso."
+      },
+      {
+        "language": "en",
+        "name": "Russian Volume Refill",
+        "description": "Maintenance for Russian volume extensions."
+      }
+    ],
+    "prices": [{ "amount": 50, "duration": 120, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pestañas pelo a pelo",
+        "description": "Extensiones clásicas naturales, una extensión sobre cada pestaña natural."
+      },
+      {
+        "language": "en",
+        "name": "Classic Lashes (1:1)",
+        "description": "Natural classic extensions, one extension on each natural lash."
+      }
+    ],
+    "prices": [{ "amount": 41, "duration": 135, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Pestañas lifting y tinte",
+        "description": "Tratamiento para elevar, curvar y teñir tus pestañas naturales."
+      },
+      {
+        "language": "en",
+        "name": "Lash Lift & Tint",
+        "description": "Treatment to lift, curl, and tint your natural lashes."
+      }
+    ],
+    "prices": [{ "amount": 36, "duration": 60, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Retiro de Pestañas",
+        "description": "Proceso cuidadoso para remover extensiones sin dañar la pestaña natural."
+      },
+      {
+        "language": "en",
+        "name": "Lash Removal",
+        "description": "Careful process to remove extensions without damaging natural lashes."
+      }
+    ],
+    "prices": [{ "amount": 10, "duration": 20, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 8,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Tinte pestañas",
+        "description": "Aplicación de color semipermanente para oscurecer las pestañas."
+      },
+      {
+        "language": "en",
+        "name": "Lash Tint",
+        "description": "Application of semi-permanent color to darken lashes."
+      }
+    ],
+    "prices": [{ "amount": 13, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 9,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Higiene facial con hidratación",
+        "description": "Limpieza facial básica con hidratación profunda."
+      },
+      {
+        "language": "en",
+        "name": "Facial Hygiene & Hydration",
+        "description": "Basic facial cleaning with deep hydration."
+      }
+    ],
+    "prices": [{ "amount": 31.99, "duration": 45, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 9,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Higiene facial profunda con Hidratación",
+        "description": "Limpieza profunda de poros e hidratación intensiva."
+      },
+      {
+        "language": "en",
+        "name": "Deep Facial Hygiene & Hydration",
+        "description": "Deep pore cleaning and intensive hydration."
+      }
+    ],
+    "prices": [{ "amount": 50.99, "duration": 75, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 10,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación Mentón con Hilo",
+        "description": "Eliminación de vello en la zona del mentón con hilo."
+      },
+      {
+        "language": "en",
+        "name": "Chin Threading",
+        "description": "Hair removal in the chin area using thread."
+      }
+    ],
+    "prices": [{ "amount": 6, "duration": 15, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 10,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación Labio Superior con Hilo",
+        "description": "Eliminación de vello en el labio superior con hilo."
+      },
+      {
+        "language": "en",
+        "name": "Upper Lip Threading",
+        "description": "Hair removal on the upper lip using thread."
+      }
+    ],
+    "prices": [{ "amount": 6, "duration": 15, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 10,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación Facial con Hilo",
+        "description": "Depilación completa del rostro con técnica de hilo."
+      },
+      {
+        "language": "en",
+        "name": "Full Face Threading",
+        "description": "Complete face hair removal using threading technique."
+      }
+    ],
+    "prices": [{ "amount": 26, "duration": 45, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con Cera labio superior",
+        "description": "Depilación de bigote con cera."
+      },
+      {
+        "language": "en",
+        "name": "Upper Lip Waxing",
+        "description": "Mustache hair removal with wax."
+      }
+    ],
+    "prices": [{ "amount": 5, "duration": 15, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con cera Facial completa",
+        "description": "Depilación de todo el rostro con cera."
+      },
+      {
+        "language": "en",
+        "name": "Full Face Waxing",
+        "description": "Hair removal of the entire face with wax."
+      }
+    ],
+    "prices": [{ "amount": 19, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con Cera Axilas",
+        "description": "Depilación suave de axilas."
+      },
+      {
+        "language": "en",
+        "name": "Underarm Waxing",
+        "description": "Gentle underarm hair removal."
+      }
+    ],
+    "prices": [{ "amount": 7, "duration": 15, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con Cera brazos completos",
+        "description": "Depilación de brazos enteros."
+      },
+      {
+        "language": "en",
+        "name": "Full Arm Waxing",
+        "description": "Hair removal for full arms."
+      }
+    ],
+    "prices": [{ "amount": 11, "duration": 45, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con Cera Ingles",
+        "description": "Depilación de línea del bikini/ingles."
+      },
+      {
+        "language": "en",
+        "name": "Bikini Line Waxing",
+        "description": "Bikini line/groin hair removal."
+      }
+    ],
+    "prices": [{ "amount": 12, "duration": 25, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con Cera Piernas Completa",
+        "description": "Depilación de piernas enteras."
+      },
+      {
+        "language": "en",
+        "name": "Full Leg Waxing",
+        "description": "Hair removal for full legs."
+      }
+    ],
+    "prices": [{ "amount": 19, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con Cera Media Piernas",
+        "description": "Depilación de media pierna (rodilla hacia abajo)."
+      },
+      {
+        "language": "en",
+        "name": "Half Leg Waxing",
+        "description": "Half leg hair removal (knee down)."
+      }
+    ],
+    "prices": [{ "amount": 15, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con cera glúteos",
+        "description": "Depilación de zona de glúteos."
+      },
+      {
+        "language": "en",
+        "name": "Buttocks Waxing",
+        "description": "Hair removal for buttocks area."
+      }
+    ],
+    "prices": [{ "amount": 11, "duration": 25, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con Cera Espalda Media o Abdomen",
+        "description": "Depilación de espalda media o zona abdominal."
+      },
+      {
+        "language": "en",
+        "name": "Mid-Back or Abdomen Waxing",
+        "description": "Hair removal for mid-back or abdominal area."
+      }
+    ],
+    "prices": [{ "amount": 15, "duration": 30, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con cera Zona íntima Completa",
+        "description": "Depilación íntima integral."
+      },
+      {
+        "language": "en",
+        "name": "Full Intimate Waxing",
+        "description": "Complete intimate area hair removal."
+      }
+    ],
+    "prices": [{ "amount": 28, "duration": 55, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con cera Cuerpo Completo",
+        "description": "Incluye piernas completas, ingles, zona íntima completa y axilas."
+      },
+      {
+        "language": "en",
+        "name": "Full Body Waxing",
+        "description": "Includes full legs, bikini line, full intimate area, and underarms."
+      }
+    ],
+    "prices": [{ "amount": 58, "duration": 80, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 11,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación con cera nariz",
+        "description": "Depilación de vellos de la nariz."
+      },
+      {
+        "language": "en",
+        "name": "Nose Waxing",
+        "description": "Nose hair removal."
+      }
+    ],
+    "prices": [{ "amount": 4, "duration": 20, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 12,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación Espalda",
+        "description": "Depilación de espalda completa para hombre."
+      },
+      {
+        "language": "en",
+        "name": "Back Waxing (Men)",
+        "description": "Full back hair removal for men."
+      }
+    ],
+    "prices": [{ "amount": 35, "duration": 60, "currency": "EUR" }],
+    "sedeIds": [4]
+  },
+  {
+    "categoryId": 12,
+    "translations": [
+      {
+        "language": "es",
+        "name": "Depilación pecho",
+        "description": "Depilación de pecho completo para hombre."
+      },
+      {
+        "language": "en",
+        "name": "Chest Waxing (Men)",
+        "description": "Full chest hair removal for men."
+      }
+    ],
+    "prices": [{ "amount": 35, "duration": 45, "currency": "EUR" }],
+    "sedeIds": [4]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Formato Profecionales
+  {
+          nombre: 'Zulay Burgos',
+          biografia:
+            'Manicurista profesional con amplia experiencia en tratamientos y diseño de uñas.',
+          phone: '+34664276448',
+          sedeId: 3,-> codigo de la sede
+          imagen:
+            '', 
+        },
+
+
+
+ {
+          nombre: 'Laura Galvis',
+          biografia:
+            'Manicurista profesional con amplia experiencia en tratamientos y diseño de uñas.',
+          phone: '+34664276448',
+          sedeId: 3,-> codigo de la sede
+          imagen:
+            '',
+        },
+
+
+
+
+ {
+          nombre: 'Gabriela Rojas',
+          biografia:
+            'Manicurista profesional con amplia experiencia en tratamientos y diseño de uñas.',
+          phone: '+34664276448',
+          sedeId: 3,-> codigo de la sede
+          imagen:
+            '',
+        },
+
+
+
+ {
+          nombre: 'Natalia Lampert',
+          biografia:
+            'Estilista profesional.',
+          phone: '+34664276448',
+          sedeId: 3,-> codigo de la sede
+          imagen:
+            'https://d375139ucebi94.cloudfront.net/region2/es/26140/resource_photos/29b0ef56cfba49b5b5a6b9e344c577-glow-benalmadena-nayomi-clenshaw-872338da480847949c01025f01db7a-booksy.jpeg?size=250x250&size=100x100',-> archivo dode va a subir la imagenes eto las actulizo 
+        },
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  nombre: "Glow Benalmádena",
+  direccion: "Calle Medina Azahara, 1, 29631 Benalmádena, Málaga, España",
+  telefono: "+34 651026700",
+  latitud: 36.6, // aproximada para Arroyo de la Miel (≈36°36′N) :contentReference[oaicite:0]{index=0}
+  longitud: -4.533, // aproximada para Arroyo de la Miel (≈4°31′O) :contentReference[oaicite:1]{index=1}
+  provincia: "Málaga",
+  horario: {
+    lunes: "10:00-19:00",
+    martes: "10:00-19:00",
+    miércoles: "10:00-19:00",
+    jueves: "10:00-19:00",
+    viernes: "10:00-19:00",
+    sábado: "10:00-19:00",
+    domingo: "Cerrado"
+  },
+  diasCerrado: [
+    // no publicados oficialmente
+  ],
+  empresaId: 1, // 👈 ajusta según tu base de datos
+  imagenes: [] // Subir posteriormente si las necesitas
+}

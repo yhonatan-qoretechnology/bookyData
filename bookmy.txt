@@ -1,0 +1,37 @@
+https://booksy.com/es-es/26140_glow-benalmadena_salon-de-unas_29214_arroyo-de-la-miel#ba_s=seo
+
+
+https://booksy.com/es-es/25686_glow-fuengirola_salon-de-unas_29244_fuengirola#ba_s=seo
+
+https://booksy.com/es-es/143713_glow-malaga_salon-de-unas_29485_malaga#ba_s=sr_1
+
+https://booksy.com/es-es/56845_glow-marbella_salon-de-unas_29260_marbella#ba_s=sr_1
+
+
+https://booksy.com/es-es/143718_lash-by-glow_cejas-y-pestanas_29214_arroyo-de-la-miel#ba_s=seo
+
+
+Seednode
+
+https://cloud.seenode.com/dashboard/applications/web?applicationId=973244#logs
+
+playstore
+
+https://play.google.com/console/developers
+
+bd DBeaver
+
+backend: feature/developerApi2026
+frondend: bookmy 2026
+
+
+url email
+email.ionos.es/appsuite/#!!&app=io.ox/mail&folder=default0/INBOX
+yhonatan@qoretechnology.com
+@Yhonatan2025
+
+
+figma:
+https://www.figma.com/design/IyyUuvgVZMcfEOuCVzZ9DJ/APP-reservas?t=yoNLA9uexrjLW8aO-0
+
+https://www.figma.com/design/RGqkEqynY8wrQzxwZVc3JW/Admin--Bookmy?node-id=0-1&p=f&t=XiTx1Fe4BffTTLKX-0

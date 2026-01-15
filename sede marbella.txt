@@ -1,0 +1,1769 @@
+Estructura de sedes
+
+Formato creacion de la sede
+{
+          nombre: 'Glow Marbella',
+          direccion:
+            'C. Pablo Casals, 3, 29602 Marbella, Málaga, España',
+          telefono: '+34699732239',
+          latitud: 36.50916245978868, 
+          longitud: -4.893536260774952,
+          provincia: 'Málaga',
+          horario: {
+            lunes: '10:00-19:00',
+            martes: '10:00-19:00',
+            miércoles: '10:00-19:00',
+            jueves: '10:00-19:00',
+            viernes: '10:00-19:00',
+            sábado: '10:00-19:00',
+            domingo: 'Cerrado',
+          },
+          diasCerrado: [
+            // no publicados oficialmente
+          ],
+          empresaId: 4, // 👈 ajusta según el ID real de WB Corporation / Glow Experience
+          imagenes: [],// las imagenes que subiran al drive o carpeta compartida
+        },
+
+
+
+Formato Categoria si hay que crear deje la lista de las que ya estan
+
+
+las que existe [Manicura,Pedicura,Refuerzos,Extensiones Acrílicas,Extensiones Polygel, Extras para tus Uñas,Cejas,Depilación con Cera,Depilación con Hilo,Peluquería,Depilación con cera hombres] -> ya estan
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Manicura',
+            description: 'Servicios de manicura y cuidado de uñas',
+          },
+          {
+            language: 'en',
+            name: 'Manicure',
+            description: 'Manicure and nail care services',
+          },
+        ],
+      },
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Pedicura',
+            description: 'Servicios de manicura y cuidado de uñas',
+          },
+          {
+            language: 'en',
+            name: 'Pedicure',
+            description: 'Manicure and nail care services',
+          },
+        ],
+      },
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Refuerzos',
+            description: 'Servicios de manicura y cuidado de uñas',
+          },
+          {
+            language: 'en',
+            name: 'Reinforcement',
+            description: 'Manicure and nail care services',
+          },
+        ],
+      },
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Extensiones Acrílicas',
+            description: 'Servicios de manicura y cuidado de uñas',
+          },
+          {
+            language: 'en',
+            name: 'Acrylic Extensions',
+            description: 'Manicure and nail care services',
+          },
+        ],
+      },
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Extensiones Polygel',
+            description: 'Servicios de manicura y cuidado de uñas',
+          },
+          {
+            language: 'en',
+            name: 'Polygel Extensions',
+            description: 'Manicure and nail care services',
+          },
+        ],
+      },
+
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Extras para tus Uñas',
+            description: 'Servicios de manicura y cuidado de uñas',
+          },
+          {
+            language: 'en',
+            name: 'Extras for your nails',
+            description: 'Manicure and nail care services',
+          },
+        ],
+      },
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Cejas',
+            description: 'Servicios de manicura y cuidado de uñas',
+          },
+          {
+            language: 'en',
+            name: 'Eyebrows',
+            description: 'Eyebrows',
+          },
+        ],
+      },
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Depilación con Cera',
+            description: 'Depilación',
+          },
+          {
+            language: 'en',
+            name: 'Waxing',
+            description: 'Hair removal',
+          },
+        ],
+      },
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Depilación con Hilo',
+            description: 'Depilación',
+          },
+          {
+            language: 'en',
+            name: 'Threading',
+            description: 'Threading',
+          },
+        ],
+      },
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Peluquería',
+            description: 'Peluquería',
+          },
+          {
+            language: 'en',
+            name: 'Hair salon',
+            description: 'Hair salon',
+          },
+        ],
+      },
+
+
+
+ {
+        image: 'https://cdn.miapp.com/categories/manicura.png',
+        translations: [
+          {
+            language: 'es',
+            name: 'Depilación con cera hombres',
+            description: 'Depilación',
+          },
+          {
+            language: 'en',
+            name: 'Waxing for men',
+            description: 'Waxing for men',
+          },
+        ],
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+Formato de los servicios
+
+  {
+        categoryId: 1, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Manicura Semipermanente SPA',
+            description:
+              'Manicura con esmaltado semipermanente y tratamiento SPA',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'SPA Semi-Permanent Manicure',
+            description: 'Semi-permanent manicure with SPA treatment',
+          },
+        ],
+        prices: [{ amount: 26, duration: 60, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+  {
+        categoryId: 1, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Manicura Rusa Semipermanente',
+            description:
+              'Manicura con esmaltado semipermanente y tratamiento SPA',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Russian Semi-Permanent Manicure',
+            description: 'Semi-permanent manicure with SPA treatment',
+          },
+        ],
+        prices: [{ amount: 32, duration: 90, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+  {
+        categoryId: 1, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Manicura esmaltado tradicional SPA',
+            description:
+              'Manicura con esmaltado semipermanente y tratamiento SPA',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Traditional SPA nail polish manicure',
+            description: 'Semi-permanent manicure with SPA treatment',
+          },
+        ],
+        prices: [{ amount: 16, duration: 40, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+  {
+        categoryId: 1, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Manicura esmaltado tradicional hombre',
+            description:
+              'Manicura con esmaltado semipermanente y tratamiento SPA',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Traditional nail polish manicure for men',
+            description: 'Semi-permanent manicure with SPA treatment',
+          },
+        ],
+        prices: [{ amount: 17, duration: 45, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+  {
+        categoryId: 2, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Refuerzo fibra',
+            description:
+              'Refuerzos',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'fiber reinforcement',
+            description: 'Reinforcement',
+          },
+        ],
+        prices: [{ amount: 31, duration: 75, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+  {
+        categoryId: 2, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Refuerzo AIB',
+            description:
+              'Refuerzos',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Reinforcement AIB',
+            description: 'Reinforcement',
+          },
+        ],
+        prices: [{ amount: 34, duration: 90, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+  {
+        categoryId: 2, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Refuerzo Gel constructor',
+            description:
+              'Refuerzos',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Building Gel Reinforcement',
+            description: 'Reinforcement',
+          },
+        ],
+        prices: [{ amount: 31, duration: 90, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+  {
+        categoryId: 2, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Refuerzo Gel constructor',
+            description:
+              'Refuerzos',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Building Gel Reinforcement',
+            description: 'Reinforcement',
+          },
+        ],
+        prices: [{ amount: 31, duration: 90, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+  {
+        categoryId: 3, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Pedicura semipermanente SPA',
+            description:
+              'Pedicuras',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Semi-permanent SPA pedicure',
+            description: 'Pedicure',
+          },
+        ],
+        prices: [{ amount: 38, duration: 60, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+  {
+        categoryId: 3, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Pedicura esmaltado tradicional SPA',
+            description:
+              'Pedicuras',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Traditional SPA nail polish pedicure',
+            description: 'Pedicure',
+          },
+        ],
+        prices: [{ amount: 38, duration: 60, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+  {
+        categoryId: 3, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Pedicura semipermanente Jelly',
+            description:
+              'Pedicuras',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Jelly semi-permanent pedicure',
+            description: 'Pedicure',
+          },
+        ],
+        prices: [{ amount: 43, duration: 120, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+  {
+        categoryId: 3, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Uñas acrilico o poligel pies',
+            description:
+              'Pedicuras',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Acrylic or polygel toenails',
+            description: 'Pedicure',
+          },
+        ],
+        prices: [{ amount: 15, duration: 20, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+ {
+        categoryId: 3, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Pedicura esmaltado tradicional hombre',
+            description:
+              'Pedicuras',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Traditional nail polish pedicure for men',
+            description: 'Pedicure',
+          },
+        ],
+        prices: [{ amount: 32, duration: 75, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+ {
+        categoryId: 4, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Uñas nuevas acrílicas tamaño max n-2',
+            description:
+              'Extensiones Acrílicas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'New acrylic nails, max size n-2',
+            description: 'Acrylic Extensions',
+          },
+        ],
+        prices: [{ amount: 48, duration: 120, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+ {
+        categoryId: 4, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Uñas nuevas acrílicas extra largas',
+            description:
+              'Extensiones Acrílicas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'New extra-long acrylic nails',
+            description: 'Acrylic Extensions',
+          },
+        ],
+        prices: [{ amount: 55, duration: 150, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+ {
+        categoryId: 4, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Relleno de uñas acrilicas',
+            description:
+              'Extensiones Acrílicas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Acrylic nail refill',
+            description: 'Acrylic Extensions',
+          },
+        ],
+        prices: [{ amount: 35, duration: 150, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+ {
+        categoryId: 4, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Relleno de uñas Extra- largas acrílicas',
+            description:
+              'Extensiones Acrílicas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Refill of extra-long acrylic nails',
+            description: 'Acrylic Extensions',
+          },
+        ],
+        prices: [{ amount: 45, duration: 120, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+ {
+        categoryId: 4, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Recubrimiento en acrílico uña natural',
+            description:
+              'Extensiones Acrílicas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Acrylic overlay on natural nails',
+            description: 'Acrylic Extensions',
+          },
+        ],
+        prices: [{ amount: 40, duration: 100, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+ {
+        categoryId: 5, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Uñas nuevas polygel tamaño max n-2',
+            description:
+              'Extensiones Polygel',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Uñas nuevas polygel tamaño max n-2',
+            description: 'Polygel Extensions',
+          },
+        ],
+        prices: [{ amount: 45, duration: 120, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+ {
+        categoryId: 5, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Uñas nuevas polygel extra largas',
+            description:
+              'Extensiones Polygel',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'New extra-long polygel nails',
+            description: 'Polygel Extensions',
+          },
+        ],
+        prices: [{ amount: 55, duration: 150, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+ {
+        categoryId: 5, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Relleno de uñas polygel',
+            description:
+              'Extensiones Polygel',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Polygel nail refill',
+            description: 'Polygel Extensions',
+          },
+        ],
+        prices: [{ amount: 34, duration: 90, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+ {
+        categoryId: 5, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Uñas relleno Polygel Extra-largas',
+            description:
+              'Extensiones Polygel',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Polygel nail refill',
+            description: 'Polygel Extensions',
+          },
+        ],
+        prices: [{ amount: 45, duration: 110, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+ {
+        categoryId: 5, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Recubrimiento de Polygel en uña natural',
+            description:
+              'Extensiones Polygel',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Polygel coating on natural nail',
+            description: 'Polygel Extensions',
+          },
+        ],
+        prices: [{ amount: 39, duration: 100, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+ {
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Implementos de asepsia',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Aseptic implements',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 4, duration: 5, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+ {
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Decoración por uña',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Nail decoration',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 2, duration: 10, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+ {
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Decoración completa',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Complete decoration',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 9, duration: 40, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Kit de manicura',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'manicure kit',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 5, duration: 5, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Cambio de forma',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'shape change',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 5, duration: 20, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Uña rota clienta Glow',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Broken nail, client Glow',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 3, duration: 15, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Uña rota clienta otro centro',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Broken nail, client at another center',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 5, duration: 20, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Retiro semipermanente',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Semi-permanent removal',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 5, duration: 10, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Retiro refuerzo',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Reinforcement removal',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 7, duration: 10, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Suplemento pedicura con cuchilla',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Pedicure supplement with razor',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 4, duration: 10, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Retiro extensión',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Extension withdrawal',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 11, duration: 30, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Baby Boomer',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Baby boomer',
+            description: 'Extra for nails',
+          },
+        ],
+        prices: [{ amount: 4, duration: 15, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+        categoryId: 6, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Adicional de manicura rusa en refuerzo',
+            description:
+              'Extra para uñas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Baby boomer',
+            description: 'Additional Russian manicure reinforcement',
+          },
+        ],
+        prices: [{ amount: 7, duration: 15, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+{
+
+        categoryId: 7, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación con cera',
+            description:
+              'Cejas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Waxing',
+            description: 'Eyebrows',
+          },
+        ],
+        prices: [{ amount: 10, duration: 15, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 7, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación henna o tinte con hilo',
+            description:
+              'Cejas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Henna or threading hair removal',
+            description: 'Eyebrows',
+          },
+        ],
+        prices: [{ amount: 30, duration: 60, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 7, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación henna o tinte con cera',
+            description:
+              'Cejas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Henna hair removal or waxing',
+            description: 'Eyebrows',
+          },
+        ],
+        prices: [{ amount: 25, duration: 30, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+
+        categoryId: 7, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación y mapping de cejas',
+            description:
+              'Cejas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Eyebrow shaping and mapping',
+            description: 'Eyebrows',
+          },
+        ],
+        prices: [{ amount: 16, duration: 20, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+{
+
+        categoryId: 7, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Henna',
+            description:
+              'Cejas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Henna',
+            description: 'Eyebrows',
+          },
+        ],
+        prices: [{ amount: 14, duration: 30, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+{
+
+        categoryId: 7, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Tinte',
+            description:
+              'Cejas',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Dye',
+            description: 'Eyebrows',
+          },
+        ],
+        prices: [{ amount: 8, duration: 20, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación con cera labio superior',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Upper lip waxing',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 7, duration: 10, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera nariz',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Nose waxing',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 4, duration: 10, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera facial completa mujer',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Full facial wax hair removal for women',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 27, duration: 30, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera axilas',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Underarm waxing',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 8, duration: 15, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera brazos completos',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Full arm waxing',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 16, duration: 45, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera ingles',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Bikini wax',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 13, duration: 25, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera Piernas completas',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Full leg waxing',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 27, duration: 30, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera media pierna',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Half leg waxing',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 18, duration: 30, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera glúteos',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Buttock waxing',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 12, duration: 25, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera espalda media o abdomen',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Waxing of the mid-back or abdomen',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 15, duration: 30, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera intima completa',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Full intimate wax hair removal',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 31, duration: 55, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 8, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera cuerpo completo',
+            description:
+              'Depilación con cera',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Full body waxing',
+            description: 'Waxing',
+          },
+        ],
+        prices: [{ amount: 67, duration: 80, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 9, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación hilo mentón',
+            description:
+              'Depilación con hilo',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Chin threading',
+            description: 'Threading',
+          },
+        ],
+        prices: [{ amount: 8, duration: 10, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+{
+
+        categoryId: 9, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación labio superiron con hilo',
+            description:
+              'Depilación con hilo',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Upper lip threading',
+            description: 'Threading',
+          },
+        ],
+        prices: [{ amount: 9, duration: 10, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 9, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación facial con hilo',
+            description:
+              'Depilación con hilo',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Facial threading',
+            description: 'Threading',
+          },
+        ],
+        prices: [{ amount: 36, duration: 45, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Lavar y orear corto',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Wash and air out briefly',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 14, duration: 40, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Lavar y orear largo',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Wash and air dry for a long time',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 18, duration: 45, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Cabello medio cepillado y planchado/ondas',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Medium-length hair, brushed and straightened/waved',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 27, duration: 80, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Cabello largo cepillado y planchado/ondas',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Long hair, brushed and straightened/waved',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 37, duration: 80, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'lavar y orear medio',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Wash and air out medium',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 16, duration: 45, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Trenza Glow con Charms',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Glow Braid with Charms',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 12, duration: 25, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Mascarilla repolarizadora',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Repolarizing mask',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 8, duration: 5, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Ritual Fusio Dose',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Ritual Fusio Dose',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 18, duration: 30, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Lavado de cabello',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Hair washing',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 10, duration: 20, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Cabello extra-largo cepillado y planchado/ondas',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Extra-long hair brushed and straightened/waved',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 47, duration: 115, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Cargo extra',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Extra charge',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 1, duration: 5, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+{
+
+        categoryId: 10, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Adicional extensiones',
+            description:
+              'Peluquería',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Additional extensions',
+            description: 'Hair salon',
+          },
+        ],
+        prices: [{ amount: 15, duration: 15, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+
+{
+
+        categoryId: 11, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación pecho hombre',
+            description:
+              'Depilación con cera hombres',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Male chest hair removal',
+            description: 'Waxing for men',
+          },
+        ],
+        prices: [{ amount: 22, duration: 45, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+{
+
+        categoryId: 11, - codigo de als categorias 
+        translations: [
+          {
+            language: 'es', -> no se toca
+            name: 'Depilación cera espalda completa',
+            description:
+              'Depilación con cera hombres',
+          },
+          {
+            language: 'en',-> no se toca
+            name: 'Full back waxing',
+            description: 'Waxing for men',
+          },
+        ],
+        prices: [{ amount: 25, duration: 60, currency: 'EUR' }],
+        sedeIds: [4], -> ide de la sede 
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Formato Profecionales
+  {
+          nombre: 'Alexa Mendoza',
+          biografia:
+            'Manicurista profesional con amplia experiencia en tratamientos y diseño de uñas.',
+          phone: '+34666555444',
+          sedeId: 4,-> codigo de la sede
+          imagen:
+            'https://d375139ucebi94.cloudfront.net/region2/es/26140/resource_photos/29b0ef56cfba49b5b5a6b9e344c577-glow-benalmadena-nayomi-clenshaw-872338da480847949c01025f01db7a-booksy.jpeg?size=250x250&size=100x100',-> archivo dode va a subir la imagenes eto las actulizo 
+        },
+
+
+
+ {
+          nombre: 'Andrea Lozano',
+          biografia:
+            'Manicurista profesional con amplia experiencia en tratamientos y diseño de uñas.',
+          phone: '+34666555444',
+          sedeId: 4,-> codigo de la sede
+          imagen:
+            'https://d375139ucebi94.cloudfront.net/region2/es/26140/resource_photos/29b0ef56cfba49b5b5a6b9e344c577-glow-benalmadena-nayomi-clenshaw-872338da480847949c01025f01db7a-booksy.jpeg?size=250x250&size=100x100',-> archivo dode va a subir la imagenes eto las actulizo 
+        },
+
+
+
+
+ {
+          nombre: 'Keisy Sanchez',
+          biografia:
+            'Manicurista profesional con amplia experiencia en tratamientos y diseño de uñas.',
+          phone: '+34666555444',
+          sedeId: 4,-> codigo de la sede
+          imagen:
+            'https://d375139ucebi94.cloudfront.net/region2/es/26140/resource_photos/29b0ef56cfba49b5b5a6b9e344c577-glow-benalmadena-nayomi-clenshaw-872338da480847949c01025f01db7a-booksy.jpeg?size=250x250&size=100x100',-> archivo dode va a subir la imagenes eto las actulizo 
+        },
+
+
+
+ {
+          nombre: 'Samantha Arroyave',
+          biografia:
+            'Estilista profesional.',
+          phone: '+34666555444',
+          sedeId: 4,-> codigo de la sede
+          imagen:
+            'https://d375139ucebi94.cloudfront.net/region2/es/26140/resource_photos/29b0ef56cfba49b5b5a6b9e344c577-glow-benalmadena-nayomi-clenshaw-872338da480847949c01025f01db7a-booksy.jpeg?size=250x250&size=100x100',-> archivo dode va a subir la imagenes eto las actulizo 
+        },
+
+
+
+
+
