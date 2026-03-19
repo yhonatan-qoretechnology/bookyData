@@ -160,3 +160,11 @@
     sedeId: 3,
     imagen: 'https://tu-servidor.com/fotos/samantha-arroyave.jpg',
   },
+ {
+          nombre: 'Danna',
+          biografia:
+            'Especialista en extensiones de pestañas y diseño de mirada personalizada.',
+          phone: '+34600400001',
+          sedeId: 4,
+          imagen: 'https://tu-servidor.com/fotos/danna-sede4.jpg',
+        },
