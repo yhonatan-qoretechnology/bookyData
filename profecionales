@@ -1,6 +1,4 @@
-profecionales
 
-const profesionalesImagen = [
   {
     nombre: 'Nayomi Clenshaw',
     biografia: 'Especialista en manicura y tratamientos de estética avanzada.',
@@ -42,14 +40,7 @@ const profesionalesImagen = [
     phone: '+34600000006',
     sedeId: 1,
     imagen: null,
-  }
-];
-
-
---------------
-
-
-const profesionalesSede2 = [
+  },
   {
     nombre: 'Paula Flecha',
     biografia: 'Especialista en estética facial y cuidado de la piel con técnicas avanzadas.',
@@ -98,13 +89,7 @@ const profesionalesSede2 = [
     phone: '+34600200007',
     sedeId: 2,
     imagen: 'https://tu-servidor.com/fotos/stefany-o.jpg',
-  }
-];
-
----------------------
-
-
-const profesionalesSede3 = [
+  },
   {
     nombre: 'Alexa Mendoza',
     biografia: 'Especialista en colorimetría y transformaciones capilares de tendencia.',
@@ -139,11 +124,7 @@ const profesionalesSede3 = [
     phone: '+34600300005',
     sedeId: 3,
     imagen: 'https://tu-servidor.com/fotos/samantha-arroyave.jpg',
-  }
-];
-
------------
-const profesionalesSede3 = [
+  },
   {
     nombre: 'Alexa Mendoza',
     biografia: 'Especialista en colorimetría y transformaciones capilares de tendencia.',
@@ -178,5 +159,4 @@ const profesionalesSede3 = [
     phone: '+34600300005',
     sedeId: 3,
     imagen: 'https://tu-servidor.com/fotos/samantha-arroyave.jpg',
-  }
-];
+  },
