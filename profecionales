@@ -1,0 +1,186 @@
+profecionales
+
+const profesionales = [
+  {
+    nombre: 'Nayomi Clenshaw',
+    biografia: 'Manicurista profesional con amplia experiencia en tratamientos y diseño de uñas.',
+    phone: '+34666555444',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Marcos Rivas',
+    biografia: 'Estilista especializado en cortes modernos y colorimetría avanzada.',
+    phone: '+34666111222',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Elena Guisado',
+    biografia: 'Experta en estética integral y tratamientos faciales rejuvenecedores.',
+    phone: '+34666333999',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Javier Montes',
+    biografia: 'Barbero profesional con 10 años de experiencia en técnicas de afeitado clásico.',
+    phone: '+34666888777',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Sofia Lorente',
+    biografia: 'Especialista en extensiones de pestañas y diseño de cejas (Microblading).',
+    phone: '+34666222555',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Ricardo Tormo',
+    biografia: 'Fisioterapeuta y masajista terapéutico enfocado en bienestar y relajación.',
+    phone: '+34666000111',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Lucía Méndez',
+    biografia: 'Técnica superior en manicura y pedicura spa con enfoque en salud de la uña.',
+    phone: '+34666444333',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Adrián Valdés',
+    biografia: 'Colorista senior experto en balayage y cambios de imagen radicales.',
+    phone: '+34666777888',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Carla Benítez',
+    biografia: 'Maquilladora profesional para eventos, bodas y producciones audiovisuales.',
+    phone: '+34666999000',
+    sedeId: 1,
+    imagen: null,
+  },
+  {
+    nombre: 'Hugo Ferrero',
+    biografia: 'Especialista en tratamientos capilares y recuperación de cabello dañado.',
+    phone: '+34666123456',
+    sedeId: 1,
+    imagen: null,
+  }
+];
+
+
+
+
+----
+
+
+
+const profesionales = [
+  {
+    nombre: 'Paula Flecha',
+    biografia: 'Especialista en estética avanzada y cuidado integral de la piel.',
+    phone: '+34600111222',
+    sedeId: 1,
+    imagen: null, // No se encontró URL de imagen en el HTML para Paula
+  },
+  {
+    nombre: 'Laura Galvis',
+    biografia: 'Experta en estilismo y tendencias de corte para el equipo de Glow Fuengirola.',
+    phone: '+34600222333',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/25686/resource_photos/447fdde1c6374a1f927a8b3e78ff4e-glow-fuengirola-laura-galvis-b1dd6f62f3994f91afa578152f2b31-booksy.jpeg',
+  },
+  {
+    nombre: 'Zulay Burgos',
+    biografia: 'Profesional en colorimetría y tratamientos capilares regenerativos.',
+    phone: '+34600333444',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/25686/resource_photos/0081312f3301442eae4d9cc10b9cf7-glow-fuengirola-zulay-burgos-5315b42fdcdb4253a00245daa21a3c-booksy.jpeg',
+  },
+  {
+    nombre: 'Natalia Lampert',
+    biografia: 'Especialista en técnicas de maquillaje profesional y diseño de mirada.',
+    phone: '+34600444555',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/25686/resource_photos/c82a954a97f14eb9897ad888576324-glow-fuengirola-natalia-lampert-310ec197399e458a86bb83ed9b9cd4-booksy.jpeg',
+  },
+  {
+    nombre: 'Carolina Velasquez',
+    biografia: 'Técnica en manicura y pedicura de alta precisión con enfoque en nail art.',
+    phone: '+34600555666',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/25686/resource_photos/d8b2b8a1ff6a4bdc9493bba0371630-glow-fuengirola-carolina-velasquez-0a42b66470044b369c75f007e0e18a-booksy.jpeg',
+  },
+  {
+    nombre: 'Maryluna Sarmiento Rozo',
+    biografia: 'Consultora de belleza especializada en tratamientos faciales personalizados.',
+    phone: '+34600666777',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/25686/resource_photos/c3d5a5471acc48a7ae633c3ab44bc7-glow-fuengirola-maryluna-sarmiento-rozo-cf9e83ddad914a6ca4013758f8792b-booksy.jpeg',
+  },
+  {
+    nombre: 'Stefany Orozco',
+    biografia: 'Experta en masajes terapéuticos y bienestar corporal en Glow Fuengirola.',
+    phone: '+34600777888',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/25686/resource_photos/27a677b3a2ab4a12a53107c52dd4ba-glow-fuengirola-stefany-orozco-6572e2dcf9504fb9883c6e90dc67ba-booksy.jpeg',
+  }
+];
+
+-----
+
+const profesionalesMarbella = [
+  {
+    nombre: 'Alexa Mendoza',
+    biografia: 'Especialista en estilismo avanzado y experta en técnicas de colorimetría para Glow Marbella.',
+    phone: '+34611222333',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/56845/resource_photos/6e9e0eace526409e807ed9aaac5bfa-glow-marbella-alexa-mendoza-95d326ec81d14009aa7d8efaa77f01-booksy.jpeg',
+  },
+  {
+    nombre: 'Andrea Lozano',
+    biografia: 'Profesional en estética integral con enfoque en tratamientos faciales y cuidado de la piel.',
+    phone: '+34611333444',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/56845/resource_photos/dae1b840dc8f4dab9f4b939dfcd05a-glow-marbella-andrea-lozano-39e8dacc063a43b8afbd2ed12560d9-booksy.jpeg',
+  },
+  {
+    nombre: 'Nicol Torres',
+    biografia: 'Técnica especialista en diseño de cejas y extensiones de pestañas con acabado natural.',
+    phone: '+34611444555',
+    sedeId: 1,
+    imagen: null, // Aparece con placeholder SVG en el HTML
+  },
+  {
+    nombre: 'Keisy Sanchez',
+    biografia: 'Experta en manicura rusa y técnicas modernas de esculpido de uñas.',
+    phone: '+34611555666',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/56845/resource_photos/ba2d2191bf3b4d2c9a6568b86b641f-glow-marbella-keisy-sanchez-ab3bfc3af1334b80baf121f6f80d1f-booksy.jpeg',
+  },
+  {
+    nombre: 'Samantha Arroyave',
+    biografia: 'Estilista senior con amplia trayectoria en cortes de tendencia y peinados para eventos.',
+    phone: '+34611666777',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/56845/resource_photos/106651c016034356b1bcdaccc7e6dd-glow-marbella-samantha-arroyave-977c996dc91e4de493792f687a28ff-booksy.jpeg',
+  }
+];
+----
+
+
+const profesionalesLashByGlow = [
+  {
+    nombre: 'Danna',
+    biografia: 'Especialista en extensiones de pestañas técnica clásica y volumen ruso en Lash By Glow.',
+    phone: '+34622111000',
+    sedeId: 1,
+    imagen: 'https://d375139ucebi94.cloudfront.net/region2/es/143718/resource_photos/0429288f44864324ba0fe38e95ec4c-lash-by-glow-danna-14d6b510351c4be49d0ccf9e5adaa6-booksy.jpeg',
+  },
+  
+];
